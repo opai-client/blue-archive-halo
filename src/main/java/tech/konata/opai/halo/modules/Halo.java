@@ -37,8 +37,8 @@ public class Halo extends ExtensionModule implements EventHandler {
     public final BooleanValue followHeadModel = HaloExtension.getAPI().getValueManager().createBoolean("Follow Pitch", false);
 
     public final NumberValue size = HaloExtension.getAPI().getValueManager().createDouble("Size", 1.5, 0.1, 3.0, 0.1);
-    public final NumberValue yawRot = HaloExtension.getAPI().getValueManager().createDouble("Yaw Rot", 0f, -90f, 90f, 1f);
-    public final NumberValue pitchRot = HaloExtension.getAPI().getValueManager().createDouble("Pitch Rot", 0f, -90f, 90f, 1f);
+    public final NumberValue yawRot = HaloExtension.getAPI().getValueManager().createDouble("X Rot", 0f, -90f, 90f, 1f);
+    public final NumberValue pitchRot = HaloExtension.getAPI().getValueManager().createDouble("Y Rot", 0f, -90f, 90f, 1f);
 
     public Halo() {
         super("Halo", "Renders a halo above the player's head that resembles a character from the game \247oBlue Archive.", EnumModuleCategory.VISUAL);

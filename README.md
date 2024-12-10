@@ -1,12 +1,7 @@
-# Extension Example
+# blue-archive-halo
 
-A example extension implementation with [opensource-components](https://github.com/opai-client/opensource-components)
-
-**Features**
-- **.binds**: show a bind list
-- **AutoWool**: automatically buy wool when you don't have enough
-- **CustomScoreboard**: a custom scoreboard widget
+Renders a halo above the player's head that resembles a character from the game [*Blue Archive*](https://bluearchive.nexon.com/home).
 
 ## Screenshots
 
-![1](https://i.imgur.com/AvaprIf.png)
+![1](https://i.imgur.com/zVAYcQa.png)

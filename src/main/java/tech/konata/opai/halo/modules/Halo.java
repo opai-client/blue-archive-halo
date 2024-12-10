@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * @author IzumiiKonata
- * @since 12/10/2024
+ * @date 12/10/2024
  */
 public class Halo extends ExtensionModule implements EventHandler {
 

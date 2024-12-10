@@ -17,7 +17,7 @@ import java.nio.IntBuffer;
 
 /**
  * @author IzumiiKonata
- * @since 2024/12/10 18:44
+ * @date 2024/12/10 18:44
  */
 @UtilityClass
 public class TextureUtils {

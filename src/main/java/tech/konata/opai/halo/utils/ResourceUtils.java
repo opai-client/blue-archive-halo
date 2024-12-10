@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 /**
  * @author IzumiiKonata
- * @since 2024/12/10 18:18
+ * @date 2024/12/10 18:18
  */
 @UtilityClass
 public class ResourceUtils {

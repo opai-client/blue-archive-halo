@@ -23,6 +23,11 @@ import java.util.List;
  */
 public class Halo extends ExtensionModule implements EventHandler {
 
+    // 你抄袭 = 你死妈
+    // 尤其是某个R开头的、使用 rise 5.x 作为 base 的、性能低下并且抄袭 thunderhack 视觉的客户端。
+    // 以下代码来自本人开发的 Phosphate 客户端。
+    // 禁止任何未经授权的使用。
+    
     public static Halo INSTANCE;
 
     public ModeValue haloMode;

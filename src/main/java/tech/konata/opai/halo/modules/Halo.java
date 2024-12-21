@@ -37,6 +37,7 @@ public class Halo extends ExtensionModule implements EventHandler {
     public final BooleanValue followHeadModel = HaloExtension.getAPI().getValueManager().createBoolean("Follow Pitch", false);
 
     public final NumberValue size = HaloExtension.getAPI().getValueManager().createDouble("Size", 1.5, 0.1, 3.0, 0.1);
+    public final NumberValue spacing = HaloExtension.getAPI().getValueManager().createDouble("Spacing", 0.65, 0.5, 2.0, 0.05);
     public final NumberValue yawRot = HaloExtension.getAPI().getValueManager().createDouble("X Rot", 0f, -90f, 90f, 1f);
     public final NumberValue pitchRot = HaloExtension.getAPI().getValueManager().createDouble("Y Rot", 0f, -90f, 90f, 1f);
 
@@ -44,7 +45,7 @@ public class Halo extends ExtensionModule implements EventHandler {
         super("Halo", "Renders a halo above the player's head that resembles a character from the game \247oBlue Archive.", EnumModuleCategory.VISUAL);
         super.setEventHandler(this);
         this.initHalos();
-        super.addValues(haloMode, inFirstPerson, followHeadModel, size, yawRot, pitchRot);
+        super.addValues(inFirstPerson, followHeadModel, size, spacing, yawRot, pitchRot);
         INSTANCE = this;
     }
 
@@ -86,6 +87,13 @@ public class Halo extends ExtensionModule implements EventHandler {
                 )
         );
 
+        this.haloRenderer.addHalo(
+                "Opai Logo",
+                new HaloRenderer.HaloData(
+        "/assets/minecraft/opai/image/logo2.png"
+                )
+        );
+
         this.haloRenderer.setCurrentHalo(this.haloRenderer.getHaloDataMap().get(haloNames.get(0)));
 
         this.haloMode = HaloExtension.getAPI().getValueManager().createModes("Style", haloNames.get(0), haloNames.toArray(new String[0]));
@@ -120,7 +128,7 @@ public class Halo extends ExtensionModule implements EventHandler {
         glStateManager.rotate(this.yawRot.getValue().floatValue(), 0, 0, 1);
         glStateManager.rotate(this.pitchRot.getValue().floatValue(), 1, 0, 0);
 
-        glStateManager.translate(0, 0.65, 0);
+        glStateManager.translate(0, spacing.getValue(), 0);
 
         glStateManager.rotate(90, 1, 0, 0);
 

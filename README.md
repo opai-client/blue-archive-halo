@@ -5,6 +5,7 @@ Renders a halo above the player's head that resembles a character from the game 
 ## SKID?!
 
 本仓库中的代码已经被 [*江苏打滑大神*](https://space.bilibili.com/670866766) 抄袭到了他的 [*左抄抄右抄抄打滑客户端*](https://github.com/RinoRika/Reversal) 中。  
+此客户端使用 rise 5.x 作为 base, 缝合了 thunderhack 视觉, 抄袭了 moonlight 光污染视觉, 使用了 [乘风](https://github.com/ChengF3ng233) 的 音乐播放器 UI, 未经授权使用了本人的 异步GL内容加载器、 SplashScreen 以及本仓库的光环代码。  
 [点我查看Stars抄袭的代码](https://github.com/RinoRika/Reversal/blob/168e2951d1999524d1fc8d23c6744745098f2a2a/src/minecraft/cn/stars/reversal/module/impl/render/BAHalo.java#L34)
 
 ## Funny Moments:

@@ -44,6 +44,9 @@ Renders a halo above the player's head that resembles a character from the game 
     <h2>滚啊脑残!</h2>
     <img src=".\res\滚啊脑残.png" alt="滚啊脑残">
     <h2>不幸的。</h2>
+    <h4>Stars大神因为我在他的群聊里 看我不顺眼 然后随便找了个踢一些一个月以上没发言的人的理由 把我飞了。</h4>
+    <h4>别诽谤我啊! 我四天之前可还是发了言的!</h4>
+    <h6>Stars大神在飞我的时候顺便勾选了不再允许此人加群.</h6>
     <img src=".\res\不幸的。.png" alt="不幸的。">
 </figure>
 

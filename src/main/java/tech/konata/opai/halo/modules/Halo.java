@@ -87,7 +87,7 @@ public class Halo extends ExtensionModule implements EventHandler {
         this.haloRenderer.addHalo(
                 "Opai Logo",
                 new HaloRenderer.HaloData(
-        "/assets/minecraft/opai/image/logo2.png"
+        "/halo/logo.png"
                 )
         );
 
